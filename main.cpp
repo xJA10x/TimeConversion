@@ -8,18 +8,12 @@ Time converter
 #include <string>
 using namespace std;
 
-// Function prototype.
-// Takes no parameters.
+// Functions prototype.
 void display();
 void stdToMlt();
 void mltToStd();
-// Function prototype.
-// Takes three parameters.
 void displayTime(int hour, int min, string amOrPm);
-// Function protype.
-// Takes two parameters.
 void displayMltTime(int hour, int min);
-
 char getSelection();
 int getHour();
 int getMin();
@@ -27,11 +21,8 @@ string getAmOrPm();
 
 int main() {
 
-  // Outputs empty line.
   cout << endl;
-  // Outputs to the console.
   cout << "####################### Running Program ##################" << endl;
-  // Outputs empty line.
   cout << endl;
 
   // Initializes variable.
@@ -39,15 +30,12 @@ int main() {
   // Declares loop control variable.
   int control;
 
-  // Outputs to the console.
   cout << "\t\tTime conversion Program" << endl;
   cout << endl;
 
   // Prompts user.
   cout << "Enter -1 to quit program: ";
-  // Stores input in the variable control.
   cin >> control;
-  // Outputs empty line.
   cout << endl;
 
   // Builds sentinel while loop.
@@ -63,7 +51,7 @@ int main() {
     // Stores choice of the user.
     choice = getSelection();
 
-    // Builds switch statement.
+
     switch(choice) {
 
       case 'a':
@@ -88,11 +76,8 @@ int main() {
 
   }
 
-  // Outputs empty line.
   cout << endl;
-  // Outputs to the console.
   cout << " ############################## Exitng Program #######################" << endl;
-  // Outputs empty line.
   cout << endl;
 
 
